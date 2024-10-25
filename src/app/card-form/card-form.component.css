@@ -1,0 +1,157 @@
+.card-details {
+  border: 2px solid #f0f019; /* Green border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Spacing inside the card */
+  background:linear-gradient(45deg, black, transparent);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 400px; /* Max width for the card */
+  margin: 20px auto; /* Center the card */
+  text-align: start; /* Center align text */
+  color: #0a0a7e;
+  
+}
+.card-details2 {
+  border: 2px solid #f0f019; /* Green border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Spacing inside the card */
+  background:linear-gradient(45deg, black, transparent);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 400px; /* Max width for the card */
+  margin: 20px auto; /* Center the card */
+  text-align: start; /* Center align text */
+  color: #0a0a7e;
+  display: none;
+}
+.name1{
+  font-size: 20px;
+
+}
+
+.oll{
+  display: flex;
+  justify-content: space-around;
+ align-items: center;
+  color: yellow;
+  
+}
+.olll{
+  display: flex;
+padding-left: 30px;
+ align-items: center;
+  color: yellow;
+  gap: 20px;
+  
+}
+.card-title {
+  font-size: 26px; /* Title size */
+  color: #0a0a7e; /* Title color */
+   /* Space below title */
+  font-weight: 600;
+  font-family: sans-serif;
+}
+span{
+  color: #e6b800;
+}
+
+/* .card-info {
+  display: flex;
+  flex-direction: column;
+} */
+
+.card-info p {
+  margin: 10px 0; /* Spacing between lines */
+   /* Font size for other text */
+}
+
+.card-number {
+  font-size: 40px;
+  font-family: sans-serif;
+width: 100%;;
+height: 50px;
+border-bottom: 1px solid  yellow;
+  margin: 20px 0; /* Space around the card number */
+  text-align: center;
+  color: #0a0a7e; /* Center align card number */
+}
+
+.name {
+  font-size: 28px; /* Larger font size for name */
+  color: #0a0a7e;
+  
+}
+
+.security-code {
+   /* Push the security code to the bottom */
+  /* Regular font size */
+  color:yellow; /* Different color for the security code */
+  
+}
+.card-form {
+  background-color: #161897; /* Light blue background */
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(17, 23, 171, 0.1);
+  max-width: 400px;
+  margin: auto;
+}
+
+.card-form h2 {
+  text-align: center;
+  color: #ffcc00; /* Yellow color for the title */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  color: yellow;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #edd204; /* Dark text for better readability */
+}
+
+.form-input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+  color: #0a0a7e;
+  
+}
+
+.form-input:focus {
+  border-color: #ffcc00; /* Yellow border on focus */
+  outline: none;
+}
+
+.submit-button {
+  background-color: #ffcc00; /* Yellow background for the button */
+  color: #333; /* Dark text for contrast */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #e6b800;
+}
+.card-image{
+  width: 100px;
+  color: yellow;
+  height: 100px;
+  background-color: #333;
+}
+strong{
+  color: #161897;
+}
+.blue {
+  color: #161897;
+  padding: 5px;
+}
+

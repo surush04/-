@@ -1,0 +1,64 @@
+<div class="">
+<form [formGroup]="cardForm" (ngSubmit)="onSubmit()" class="card-form">
+  <h2>Формаи сабт</h2>
+  
+  <div class="form-group">
+    <label for="name">Ном:</label>
+    <input id="name" formControlName="name" class="form-input" required>
+  </div>
+  <div class="form-group">
+    <label for="lustname">номи падар:</label>
+    <input id="lustname" formControlName="lustname" class="form-input" required>
+  </div>
+
+  <div class="form-group">
+    <label for="birthYear">Соли тавалуд:</label>
+    <input type="text" id="birthYear" formControlName="birthYear" class="form-input" placeholder="MM/YY" required (input)="formatBirthYear($event)">
+  </div>
+
+  <div class="form-group">
+    <label for="cardNumber">Рақами карта:</label>
+    <input id="cardNumber" formControlName="cardNumber" class="form-input" appCardNumber>
+  </div>
+
+  <div class="form-group">
+    <label for="securityCode">Код (3 рақам):</label>
+    <input id="securityCode" formControlName="securityCode" type="text" class="form-input" maxlength="3" required (input)="onSecurityCodeInput($event)">
+  </div>
+
+  <div class="form-group">
+    <label for="cardImage">Upload Card Image:</label>
+    <input type="file" id="cardImage" (change)="onImageSelected($event)">
+  </div>
+
+  <button type="submit" class="submit-button">сохтани карта</button>
+</form>
+
+<div class="card-details" >
+  <div class="olll">
+    <div class="card-image">
+      <img *ngIf="cardImage" [src]="getCardImageUrl()" alt="Card Image" class="card-image">
+    </div>
+    <div>
+      <p class="name1"><strong>ном:</strong> {{ cardForm.value.name }}</p>
+      <p class="name1"><strong>номи падар:</strong> {{ cardForm.value.lustname }}</p>
+    </div>
+  </div>
+  <div class="card-info">
+    <p class="card-number" >
+      <span  class="blue">{{ cardForm.value.cardNumber.substring(0, 4) }}</span>
+      <span class="blue">{{ cardForm.value.cardNumber.substring(5, 9) }}</span>
+      <span class="blue">{{ cardForm.value.cardNumber.substring(10, 14) }}</span>
+      <span class="blue">{{ cardForm.value.cardNumber.substring(15, 19) }}</span>
+    </p>
+    <div class="oll">
+      <p class="birth-year"><strong>MM/YY:</strong>{{ cardForm.value.birthYear }}</p>
+      <p class="security-code"><strong>Код:</strong> {{ cardForm.value.securityCode }}</p>
+    </div>
+    <div class="oll">
+      <h3 class="card-title"><span>ФУР</span>УЗ БА<span>НК</span></h3>
+      <img src="/logo.png" alt="Company Logo" class="logo">
+    </div>
+  </div>
+</div>
+</div>
